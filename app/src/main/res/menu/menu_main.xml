@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.arman.astro.ui.main.MainActivity">
+    <item
+        android:id="@+id/action_sort_channel_id"
+        android:orderInCategory="100"
+        android:title="@string/action_sort_channel_id"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_channel_name"
+        android:orderInCategory="100"
+        android:title="@string/action_sort_channel_name"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_favourites"
+        android:orderInCategory="100"
+        android:title="@string/action_sort_favourites"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear_favourites"
+        android:orderInCategory="100"
+        android:title="@string/action_clear_favourites"
+        app:showAsAction="never" />
+</menu>

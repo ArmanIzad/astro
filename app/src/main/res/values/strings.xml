@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Astro</string>
+    <string name="action_sort_channel_id">Sort Channel ID</string>
+    <string name="action_sort_channel_name">Sort Channel Name</string>
+    <string name="action_sort_favourites">Sort Favourites</string>
+    <string name="action_clear_favourites">Clear Favourites</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
