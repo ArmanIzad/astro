@@ -1,7 +1,5 @@
 package com.arman.astro.ui.channel;
 
-import android.util.Log;
-
 import com.arman.astro.data.DataManager;
 import com.arman.astro.data.network.model.channel.GetChannelsResponse;
 
@@ -35,7 +33,6 @@ public class ChannelListPresenter<T extends IChannelListView> implements IChanne
                     @Override
                     public void accept(@io.reactivex.annotations.NonNull GetChannelsResponse getChannelsResponse) throws Exception {
                         view.hideLoading();
-                        //getChannelsResponse.addFavourites(dataManager.getAllFavourites());
                         view.updateData(getChannelsResponse);
                     }
                 }, new Consumer<Throwable>() {
@@ -49,7 +46,6 @@ public class ChannelListPresenter<T extends IChannelListView> implements IChanne
 
     @Override
     public void addRemoveChannelToFavourite(String channelId, boolean isAdded) {
-        Log.d("addRemoveChannelToFavourite", channelId + isAdded);
         if(isAdded) {
             dataManager.addToFavourite(channelId);
         } else {

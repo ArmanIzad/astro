@@ -57,7 +57,6 @@ public class TvGuidePresenter implements ITvGuidePresenter<ITvGuideView> {
                     @Override
                     public void accept(@io.reactivex.annotations.NonNull GetEventsResponse getEventsResponse) throws Exception {
                         view.hideLoading();
-                        //getEventsResponse.addFavourites(dataManager.getAllFavourites());
                         view.updateData(getEventsResponse);
                     }
                 }, new Consumer<Throwable>() {

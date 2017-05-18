@@ -90,7 +90,6 @@ public class ChannelListAdapter extends RecyclerView.Adapter<ChannelListAdapter.
             ivFavourite.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d("cliceki", "click");
                     callback.onChannelFavourite(channel.getChannelId(), !channel.isFavourite());
                 }
             });
